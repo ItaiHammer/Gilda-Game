@@ -8,7 +8,7 @@
     "children":[],
     "name":"Default",
   },
-  "defaultScriptType":0,
+  "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Animation Curves","folderPath":"folders/Animation Curves.yy","name":"Animation Curves","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -34,12 +34,17 @@
   },
   "name":"Gilda Game",
   "resources":[
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"objCamera","path":"objects/objCamera/objCamera.yy",},},
+    {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},},
+    {"id":{"name":"objWall","path":"objects/objWall/objWall.yy",},},
+    {"id":{"name":"rmTest","path":"rooms/rmTest/rmTest.yy",},},
+    {"id":{"name":"sprPlayer","path":"sprites/sprPlayer/sprPlayer.yy",},},
+    {"id":{"name":"sprWall","path":"sprites/sprWall/sprWall.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rmTest","path":"rooms/rmTest/rmTest.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
