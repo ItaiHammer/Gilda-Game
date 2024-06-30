@@ -1,14 +1,11 @@
-/// @description Insert description here
-// You can write your code in this editor
-right = keyboard_check(ord("D"));
-left = keyboard_check(ord("A"));
-up = keyboard_check(ord("W"));
-down = keyboard_check(ord("S"));
+var right = keyboard_check(ord("D"));
+var left = keyboard_check(ord("A"));
+var up = keyboard_check(ord("W"));
+var down = keyboard_check(ord("S"));
 
-// 1 for right -1 for left
-xInput = right - left;
+var xInput = right - left;
+var yInput = down - up;
 
-// 1 for up -1 for down
-yInput = down - up;
+move_and_collide(xInput * characterSpeed, yInput * characterSpeed, objWall);
 
-move_and_collide(xInput * movementSpeed, yInput * movementSpeed, objWall);
+show_debug_message("x: " + string(x) + ", y: " + string(y));
