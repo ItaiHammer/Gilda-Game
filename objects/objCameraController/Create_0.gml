@@ -4,9 +4,13 @@ camHeight = camera_get_view_height(cam);
 
 follow = objPlayer;
 defaultFloatyness = 10;
-edgeFloatyness = 20;
-edgeSlownessDistance = 300;
+edgeFloatyness = 30;
+edgeSlownessDistance = 200;
 floatyness = defaultFloatyness;
 
 xTo = x;
 yTo = y;
+
+// animation variables
+nextToEdge = false;
+changeInFloatyness = 0.5;

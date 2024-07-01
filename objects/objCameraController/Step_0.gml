@@ -11,9 +11,9 @@ var camY = camera_get_view_y(cam);
 
 // slowing down camera when it's close to edges
 if ((camX - edgeSlownessDistance) <= 0 or camX + camWidth + edgeSlownessDistance >= global.totalGridWidth or (camY - edgeSlownessDistance) <= 0 or camY + camHeight + edgeSlownessDistance >= global.totalGridHeight) {
-	floatyness = edgeFloatyness;
+	nextToEdge = true;
 } else {
-	floatyness = defaultFloatyness;
+	nextToEdge = false;
 }
 
 // stopping camera if it hits edges
@@ -23,11 +23,6 @@ if ((camX <= 0 and (xTo - x) < 0) or (camX + camWidth >= global.totalGridWidth a
 	hittingAnEdgeX = 1;
 }
 
-show_debug_message(camY)
-show_debug_message(camHeight)
-show_debug_message(camY + camHeight)
-show_debug_message(global.totalGridHeight)
-
 if ((camY <= 0 and (yTo - y) < 0) or (camY + camHeight >= global.totalGridHeight and (yTo - y) > 0)) {
 	hittingAnEdgeY = 0;
 } else {
@@ -35,6 +30,11 @@ if ((camY <= 0 and (yTo - y) < 0) or (camY + camHeight >= global.totalGridHeight
 }
 
 // moving camera
+if (nextToEdge and floatyness < edgeFloatyness) {
+	floatyness += changeInFloatyness;
+} else if (!nextToEdge and floatyness > defaultFloatyness) {
+	floatyness -= changeInFloatyness;
+}
 
 x += ((xTo - x)/floatyness) * hittingAnEdgeX;
 y += ((yTo - y)/floatyness) * hittingAnEdgeY;
