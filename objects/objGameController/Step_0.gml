@@ -1,0 +1,1 @@
+selectorMovement(objSelector, gridCellSize, gridCellOffset)

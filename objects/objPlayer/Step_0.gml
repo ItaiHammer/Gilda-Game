@@ -8,4 +8,4 @@ var yInput = down - up;
 
 move_and_collide(xInput * characterSpeed, yInput * characterSpeed, objWall);
 
-show_debug_message("x: " + string(x) + ", y: " + string(y));
+// show_debug_message("x: "+string(x)+", y: "+string(y));
