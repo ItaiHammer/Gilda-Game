@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"selectorMovement",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"selectorMovement",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
