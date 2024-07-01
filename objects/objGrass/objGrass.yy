@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"objPath",
+  "%Name":"objGrass",
   "eventList":[],
   "managed":true,
-  "name":"objPath",
+  "name":"objGrass",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprPath",
-    "path":"sprites/sprPath/sprPath.yy",
+    "name":"sprGrass",
+    "path":"sprites/sprGrass/sprGrass.yy",
   },
   "spriteMaskId":null,
   "visible":true,
