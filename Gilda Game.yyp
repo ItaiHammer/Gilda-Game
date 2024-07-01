@@ -48,6 +48,8 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"tosolveconflict","path":"rooms/tosolveconflict/tosolveconflict.yy",},},
     {"id":{"name":"createNewGame","path":"scripts/createNewGame/createNewGame.yy",},},
+    {"id":{"name":"getPath","path":"scripts/getPath/getPath.yy",},},
+    {"id":{"name":"Point","path":"scripts/Point/Point.yy",},},
     {"id":{"name":"selectorMovement","path":"scripts/selectorMovement/selectorMovement.yy",},},
     {"id":{"name":"Ambience1","path":"sounds/Ambience1/Ambience1.yy",},},
     {"id":{"name":"endBlock","path":"sprites/endBlock/endBlock.yy",},},

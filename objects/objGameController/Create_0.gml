@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-gridRows = 30;
-gridColumns = 15;
+global.gridRows = 30;
+global.gridColumns = 15;
 gridCellSize = 128;
 gridCellOffset = 0;
 

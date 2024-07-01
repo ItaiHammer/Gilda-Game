@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"point",
+  "%Name":"Point",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"point",
+  "name":"Point",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",
