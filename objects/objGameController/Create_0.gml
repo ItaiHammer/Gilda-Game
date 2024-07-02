@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-global.gridRows = 30;
-global.gridColumns = 15;
+gridRows = 30;
+gridColumns = 15;
 gridCellSize = 128;
 gridCellOffset = 0;
 
@@ -17,8 +17,9 @@ instance_create_depth(
 	0,
 	objPlayer);
 
+randomize();
 // generating grid
-createNewGame(gridRows, gridColumns, gridCellSize, gridCellSize, gridCellOffset, gridCellOffset, objPath);
+createNewGame(gridRows, gridColumns, gridCellSize, gridCellSize, gridCellOffset, gridCellOffset, objGrass);
 
 // setting up camera controller
 instance_create_depth(playerSpawnX, playerSpawnY, 0, objCameraController);
